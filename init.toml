@@ -42,3 +42,12 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+[[layers]]
+name = 'lang#c'
+enable_clang_syntax_highlight = true
+
+[[layers]]
+name = 'lang#vim'
+
+[[layers]]
+name = 'lang#toml'
