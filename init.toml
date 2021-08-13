@@ -30,24 +30,46 @@
     # My Spacevim
     bootstrap_before = "myspacevim#before"
     bootstrap_after  = "myspacevim#after"
+    # Default auto complete
+    autocomplete_method = "coc"
 
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "cycle"
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "cycle"
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
 
 [[layers]]
-name = 'lang#c'
-enable_clang_syntax_highlight = true
+  name = 'lang#c'
+  enable_clang_syntax_highlight = true
+# [layer.clang_std]
+  # cpp = "c11"
 
 [[layers]]
-name = 'lang#vim'
+  name = 'lang#vim'
 
 [[layers]]
-name = 'lang#toml'
+  name = 'lang#toml'
+
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "c",
+    "cpp"
+  ]
+  [layers.override_cmd]
+    c = ["clangd"]
+
+  
+[[layers]]
+  name = "format"
+  
+  
+  
+  
+  
