@@ -36,6 +36,7 @@
 # Enable autocomplete layer
 [[layers]]
   name = 'autocomplete'
+  # Enter & Tab   设为cycle为循环，complete为补全，smart为智能补全(有点僵硬)
   auto_completion_return_key_behavior = "complete"
   auto_completion_tab_key_behavior = "cycle"
 

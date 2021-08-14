@@ -6,6 +6,6 @@ function! myspacevim#after() abort
   noremap S <nop>
   noremap s :w<Enter>
   noremap <C-q> Q
-  noremap Q :wq<Enter>
+  noremap Q :q<Enter>
   noremap <Space><Enter> :noh<Enter>
 endfunction
